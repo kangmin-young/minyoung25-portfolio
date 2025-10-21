@@ -551,7 +551,7 @@ font-family: 'GMarketSans';
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       /* 위쪽 반투명 검정 */
       rgba(0, 0, 0, 0.5)),
-    url('/img/begin_main.jpg');
+    url('../img/begin_main.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -616,7 +616,7 @@ font-family: 'GMarketSans';
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       /* 위쪽 반투명 검정 */
       rgba(0, 0, 0, 0.5)),
-    url('/img/allthat_main.jpg');
+    url('../img/allthat_main.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -635,7 +635,7 @@ font-family: 'GMarketSans';
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       /* 위쪽 반투명 검정 */
       rgba(0, 0, 0, 0.5)),
-    url('/img/builtup_main.jpg');
+    url('../img/builtup_main.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
