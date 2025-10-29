@@ -125,12 +125,17 @@ header.scrolled {
   transform: translateX(-50%);
   width: 35%;
   max-width: 1000px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px) saturate(180%) contrast(120%);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px) saturate(180%) contrast(110%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(110%);
   border-radius: 40px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   border-bottom: none;
+  transition: all 0.3s ease;
+  z-index: 999;
 }
+
 
 header.scrolled .brand__name {
   display: none
@@ -467,17 +472,23 @@ font-family: 'GMarketSans';
 .about {
   display: flex;
   gap: 100px;
-  font-family: 'g';
+  font-family: 'NeueHelveticaGeorgian';
 }
 
 .about .left_box .profile {
-  border: 2px solid #000;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 40px;
   border-radius: 50px;
-  background: #c5c5c5;
+  background: rgba(255, 255, 255, 0.15);
+ backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   margin-bottom: 50px;
   display: flex;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .about .left_box .profile img {
   max-width: 200px;
@@ -516,30 +527,38 @@ font-family: 'GMarketSans';
 }
 .skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 1000px;
-  margin: 0 auto
+  margin: 40px auto;
 }
 
 .skill {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-
-  transition: all 0.3s ease
-}
-
-.skill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1)
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .skill b {
+  padding: 12px 20px;
   display: block;
-  color: var(--text);
+  color: #111;
   font-size: 15px;
-  text-align:center;
+  text-align: center;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.skill:hover b {
+  color: #000;
 }
 
 .bar {
@@ -605,22 +624,30 @@ font-family: 'GMarketSans';
 
 .text .button {
   border-radius: 30px;
-  border: 1px solid #fff;
-  font-weight: 300;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: 400;
   padding: 10px 40px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: all 0.3s ease;
-  /* ← 요 한 줄이 핵심! */
+  cursor: pointer;
 }
 
 .text.button_box {
   display: flex;
+  gap: 10px;
 }
 
 .text .button:hover {
-  border: 1px solid #fff;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
   color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 /*ALLTHATSPORTS*/
 #allthat {
@@ -970,7 +997,7 @@ footer {
   }
 
   .skills {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 
   .dot-nav {
