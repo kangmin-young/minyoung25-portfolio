@@ -139,7 +139,7 @@ header.scrolled {
   transform: translateX(-50%);
   width: 35%;
   max-width: 1000px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px) saturate(180%) contrast(110%);
   -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(110%);
@@ -772,10 +772,20 @@ nav a:focus {
 
 .Adaptive_box {
   display: flex;
+  gap: 20px;
 }
-
+.Adaptive_title {  
+  margin-left: 20px;
+  padding-bottom: 530px;
+  text-align: left;
+  font-size: 130px;
+ 
+  color: var(--text);
+  font-weight: 700
+}
 .Adaptive_box .Adaptive_left {
   width: 60%;
+  padding-top: 250px;
 }
 
 .Adaptive_box .Adaptive_right {
