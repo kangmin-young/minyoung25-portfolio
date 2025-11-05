@@ -633,7 +633,7 @@ font-size: clamp(3.75rem, 15vw, 12.5rem); /* 60px ~ 200px */  font-weight: 600;
 
 .text h3 {
   font-weight: 700;
- font-size: 5rem; /* 80px */
+  font-size: clamp(3.75rem, 15vw, 5rem);
 }
 
 .text .sub {
@@ -778,8 +778,7 @@ font-size: clamp(3.75rem, 15vw, 12.5rem); /* 60px ~ 200px */  font-weight: 600;
   margin-left: 20px;
   padding-bottom: 530px;
   text-align: left;
-  font-size: 130px;
- 
+  font-size: 8.125rem; 
   color: var(--text);
   font-weight: 700
 }
@@ -850,6 +849,7 @@ font-size: clamp(3.75rem, 15vw, 12.5rem); /* 60px ~ 200px */  font-weight: 600;
   padding: 60px 0;
   text-align: center;
 }
+#Responsive  .section__title{font-size: 8.125rem;}
 
 #Responsive h1 {
   font-weight: 700;
@@ -1096,4 +1096,9 @@ footer {
   }
   .about {display: block;}
   #begin .begin_pc,#allthat .allthat_mokup,#builtup .builtup_mokup {max-width: 200px;}
+  .Adaptive_box {display: block;}
+  .Adaptive_box .Adaptive_left {width: 100%;}
+  .Adaptive_box .Adaptive_right {width:100%;}
+  .Adaptive_title,#Responsive .section__title {font-size: 4.125rem;}
+  
 }
