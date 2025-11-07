@@ -159,7 +159,6 @@
     <section id="begin">
       <div class="container">
         <div class="text">
-          
           <p class="pj_num">01 적응형 웹사이트</p>
           <h3>Begin</h3>
           <p class="sub">카페24 스킨제작 - 패션, 화장품 쇼핑몰</p>
@@ -180,7 +179,7 @@
           <img class="allthat_mokup" src="img/allthat_mockup.png" alt="올댓 목업" />
         </a>
         <div class="text right">
-         <p class="pj_num">02 반응형 웹사이트</p>
+          <p class="pj_num">02 반응형 웹사이트</p>
           <h3>ALL THAT SPORTS</h3>
           <p class="sub">카페24 스킨제작 - 종합쇼핑몰</p>
           <div class="button_box">
@@ -235,7 +234,7 @@
 
     <section id="Responsive">
       <div class="container">
-        <h2 class="section__title">Responsive</h2>
+        <h2 class="Responsive_title">Responsive</h2>
         <div class="swiper responsiveSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -286,7 +285,6 @@
         </div>
       </div>
 
-    
       <script>
         const responsiveSwiper = new Swiper(".responsiveSwiper", {
           slidesPerView: 4,
@@ -295,10 +293,10 @@
           autoplay: { delay: 2500, disableOnInteraction: false },
           pagination: { el: ".swiper-pagination", clickable: true },
           breakpoints: {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 4 }
-  }
+            1024: { slidesPerView: 4 },
+            768: { slidesPerView: 2 },
+            480: { slidesPerView: 1 }
+          }
         });
       </script>
     </section>
