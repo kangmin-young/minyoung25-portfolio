@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/index.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" href="img/favicon-16x16.png">
 </head>
 
 <body>
@@ -29,34 +30,56 @@
         <span></span><span></span><span></span>
       </label>
       <nav>
-        <ul>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cafe24skin">Cafe24skin</a></li>
+            <li><a href="#experience">Projects</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
     </div>
   </header>
 
   <!-- 사이드 도트 네비게이션 -->
   <div class="dot-nav" id="dotNav">
-    <div class="dot-nav__item active" data-section="intro"><span class="dot-nav__label">Intro</span></div>
-    <div class="dot-nav__item" data-section="index"><span class="dot-nav__label">Index</span></div>
-    <div class="dot-nav__item" data-section="hero"><span class="dot-nav__label">Hero</span></div>
-    <div class="dot-nav__item" data-section="about"><span class="dot-nav__label">About</span></div>
-    <div class="dot-nav__item" data-section="skills"><span class="dot-nav__label">Skills</span></div>
-    <div class="dot-nav__item" data-section="experience"><span class="dot-nav__label">Experience</span></div>
-    <div class="dot-nav__item" data-section="begin"><span class="dot-nav__label">Begin</span></div>
-    <div class="dot-nav__item" data-section="contact"><span class="dot-nav__label">Contact</span></div>
-  </div>
+  <button class="dot-nav__item active" data-section="intro">
+    <span class="dot-nav__label">Intro</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="index">
+    <span class="dot-nav__label">Index</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="about">
+    <span class="dot-nav__label">About</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="cafe24skin">
+    <span class="dot-nav__label">Cafe24 Skin</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="experience">
+    <span class="dot-nav__label">Projects</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="design">
+    <span class="dot-nav__label">Design</span>
+  </button>
+
+  <button class="dot-nav__item" data-section="contact">
+    <span class="dot-nav__label">Contact</span>
+  </button>
+</div>
+
 
   <main id="main">
     <section class="intro" id="intro">
       <h1>I'M</h1>
     </section>
-
     <section class="index" id="index">
       <div class="container">
         <div class="index_box">
@@ -128,10 +151,10 @@
           </div>
 
           <div class="right_box">
-            <h2>EXPERIENCE</h2>
+            <h2>SKILLS</h2>
             <div class="skills">
               <div class="skill"><b>HTML5</b></div>
-              <div class="skill"><b>CSS3 / SCSS</b></div>
+              <div class="skill"><b>CSS3 </b></div>
               <div class="skill"><b>JavaScript</b></div>
               <div class="skill"><b>Figma</b></div>
               <div class="skill"><b>Photoshop</b></div>
@@ -145,13 +168,14 @@
       </div>
     </section>
 
-    <section id="experience">
+
+
+    <section id="cafe24skin">
       <div class="container">
         <div class="section__head">
           <p class="sub_title">ME</p>
-          <h2 class="section__title">PROJECTS</h2>
-          <p class="section__desc">다양한 아이디어와 기술을 실험하며 쌓아온 결과물들을 모았습니다.<br />
-            새로운 개념을 실제로 구현하고 테스트하는 과정을 통해 배움을 확장하고 있습니다.</p>
+          <h2 class="section__title">Cafe24 skin</h2>
+          <p class="section__desc">카페24 쇼핑몰 스킨 적응형 반응형을 디자인 후 제작을 했습니다. </p>
         </div>
       </div>
     </section>
@@ -159,6 +183,7 @@
     <section id="begin">
       <div class="container">
         <div class="text">
+
           <p class="pj_num">01 적응형 웹사이트</p>
           <h3>Begin</h3>
           <p class="sub">카페24 스킨제작 - 패션, 화장품 쇼핑몰</p>
@@ -191,7 +216,7 @@
 
     <section id="builtup">
       <div class="container">
-        <a href="https://d.cafe24.com/sample?productCode=PTMD845976&frame=P" target="_blank">
+        <a href="https://d.cafe24.com/sample?productCode=PTMD857948&frame=P" target="_blank">
           <img class="builtup_mokup" src="img/Buitup_Mockup.png" alt="빌트업 목업" />
         </a>
         <div class="text">
@@ -199,7 +224,7 @@
           <h3>BUILTUP</h3>
           <p class="sub">카페24 스킨제작 - 기업형</p>
           <div class="button_box">
-            <a href="https://d.cafe24.com/sample?productCode=PTMD845976&frame=P" target="_blank" class="button">반응형</a>
+            <a href="https://d.cafe24.com/sample?productCode=PTMD857948&frame=P" target="_blank" class="button">반응형</a>
           </div>
         </div>
       </div>
@@ -207,26 +232,29 @@
 
     <section id="Adaptive">
       <div class="container">
-       
         <div class="Adaptive_box">
           <div class="Adaptive_left">
-          <ul>
-            <li>
-              <div class="img-wrap">
-                <img src="img/that_thum.jpg" alt="댓썸네일">
-                <div class="overlay"><span>보러가기</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="img-wrap">
-                <img src="img/velle_thum.jpg" alt="벨레썸네일">
-                <div class="overlay"><span>보러가기</span></div>
-              </div>
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <a href="https://ecudemo353382.cafe24.com/" target="_blank">
+                  <div class="img-wrap">
+                    <img src="img/that_thum.jpg" alt="댓썸네일">
+                    <div class="overlay"><span>보러가기</span></div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="https://ecudemo364725.cafe24.com/" target="_blank">
+                  <div class="img-wrap">
+                    <img src="img/velle_thum.jpg" alt="벨레썸네일">
+                    <div class="overlay"><span>보러가기</span></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
+
           <div class="Adaptive_right">
-             <h2 class="Adaptive_title">Adaptive</h2>
+            <h2 class="Adaptive_title">Adaptive</h2>
           </div>
         </div>
       </div>
@@ -234,11 +262,11 @@
 
     <section id="Responsive">
       <div class="container">
-        <h2 class="Responsive_title">Responsive</h2>
+        <h2 class="section__title">Responsive</h2>
         <div class="swiper responsiveSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://ecudemo361244.cafe24.com/" target="_blank">
                 <div class="img-wrap">
                   <img src="img/lumi_thum.jpg" alt="루미에썸네일">
                   <div class="overlay"><span>보러가기</span></div>
@@ -246,35 +274,35 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://d.cafe24.com/sample?productCode=PTMD857240&frame=P" target="_blank">
                 <div class="img-wrap"><img src="img/show_thum.jpg" alt="쇼박스썸네일">
                   <div class="overlay"><span>보러가기</span></div>
                 </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://d.cafe24.com/sample?productCode=PTMD864740&frame=P" target="_blank">
                 <div class="img-wrap"><img src="img/oruand_thum.jpg" alt="오루앤드썸네일">
                   <div class="overlay"><span>보러가기</span></div>
                 </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://ecudemo370299.cafe24.com/" target="_blank">
                 <div class="img-wrap"><img src="img/breeze_thum.jpg" alt="브리즈썸네일">
                   <div class="overlay"><span>보러가기</span></div>
                 </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://d.cafe24.com/sample?productCode=PTMD854725&frame=P" target="_blank">
                 <div class="img-wrap"><img src="img/on_thum.jpg" alt="온썸네일">
                   <div class="overlay"><span>보러가기</span></div>
                 </div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="">
+              <a href="https://d.cafe24.com/sample?productCode=PTMD855267&frame=P/" target="_blank">
                 <div class="img-wrap"><img src="img/rosely_thum.jpg" alt="로젤리썸네일">
                   <div class="overlay"><span>보러가기</span></div>
                 </div>
@@ -285,6 +313,7 @@
         </div>
       </div>
 
+
       <script>
         const responsiveSwiper = new Swiper(".responsiveSwiper", {
           slidesPerView: 4,
@@ -293,22 +322,176 @@
           autoplay: { delay: 2500, disableOnInteraction: false },
           pagination: { el: ".swiper-pagination", clickable: true },
           breakpoints: {
-            1024: { slidesPerView: 4 },
+            0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            480: { slidesPerView: 1 }
+            1024: { slidesPerView: 4 }
           }
         });
       </script>
     </section>
 
-    <section id="contact">
+    <section id="experience">
       <div class="container">
         <div class="section__head">
-          <h2 class="section__title">Thank<br/>you </h2>
-           <!--a class="mail" href="mailto:minyoung5968@gmail.com"> minyoung5968@gmail.com</a-->
-          <h2 class="section__title thank" >감사합니다</h2>
+          <p class="sub_title">ME</p>
+          <h2 class="section__title">PROJECTS</h2>
+          <p class="section__desc">실제 고객 적용 프로젝트입니다.</p>
         </div>
+      </div>
     </section>
+
+    <section class="project-site">
+      <div class="container">
+        <h2>PROJECT-SITE</h2>
+        <div class="flex_box">
+          <a href="https://orcahome.co.kr/" target="_blank" class="site-card">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="url">https://orcahome.co.kr/</span>
+              </div>
+
+              <div class="browser-content">
+                <img src="img/orcahome.jpg" alt="오르카홈 웹사이트 미리보기">
+                <div class="overlay">
+                  <span>사이트 보러가기</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://theredface.com/index.html" target="_blank" class="site-card">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="url">https://theredface.com/index.html</span>
+              </div>
+
+              <div class="browser-content">
+                <img src="img/redface.jpg" alt="루미 웹사이트 미리보기">
+                <div class="overlay">
+                  <span>사이트 보러가기</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://murrymall.co.kr/" target="_blank" class="site-card">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="url">https://murrymall.co.kr/</span>
+              </div>
+
+              <div class="browser-content">
+                <img src="img/murrymall.jpg" alt="루미 웹사이트 미리보기">
+                <div class="overlay">
+                  <span>사이트 보러가기</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="design">
+      <div class="container">
+        <div class="section__head">
+          <p class="sub_title">ME</p>
+          <h2 class="section__title">Design</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="design-grid">
+      <div class="container">
+        <div class="design-grid">
+          <div class="design-item" data-img="img/card.png">
+            <img src="img/card.png" alt="카드뉴스">
+          </div>
+          <div class="design-item" data-img="img/card2.png">
+            <img src="img/card2.png" alt="디자인2">
+          </div>
+          <div class="design-item" data-img="img/card3.png">
+            <img src="img/card3.png" alt="디자인3">
+          </div>
+          <div class="design-item" data-img="img/immmcoffee.png">
+            <img src="img/immmcoffee.png" alt="커피브랜딩">
+          </div>
+          <div class="design-item" data-img="img/membership.jpg">
+            <img src="img/membership.jpg" alt="맴버쉽이미지">
+          </div>
+          <div class="design-item" data-img="img/menu.jpg">
+            <img src="img/menu.jpg" alt="메뉴판">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="design-modal">
+      <span class="modal-close">&times;</span>
+
+      <div class="modal-inner">
+        <div class="modal-content">
+          <img class="modal-img" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        const modal = document.querySelector('.design-modal');
+        const modalImg = document.querySelector('.modal-img');
+        const closeBtn = document.querySelector('.modal-close');
+
+        document.querySelectorAll('.design-item').forEach(item => {
+          item.addEventListener('click', function () {
+            modalImg.src = this.dataset.img;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+
+        // ✅ 배경 클릭 시 닫힘 (핵심)
+        modal.addEventListener('click', function (e) {
+          if (!e.target.closest('.modal-content')) {
+            closeModal();
+          }
+        });
+
+        function closeModal() {
+          modal.classList.remove('active');
+          modalImg.src = '';
+          document.body.style.overflow = '';
+        }
+
+      });
+    </script>
+
+
+
+
+<section id="contact">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Thank you</h2>
+      <p class="section__desc">
+        포트폴리오를 검토해 주셔서 감사합니다.<br>
+
+      </p>
+    </div>
+  </div>
+</section>
+
+
   </main>
   <footer>
     <div class="container">
