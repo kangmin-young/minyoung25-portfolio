@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'NeueHelveticaGeorgian';
-  src: url(/font/neue-helvetica-75-bold.woff);
+  src: url(/font/NeueHelveticaBQ-Bold.woff);
   font-weight: 700;
   /* Bold */
   font-style: normal;
@@ -1276,7 +1276,7 @@ footer {
 
 
 .project-site h2 {margin-bottom: 0;}
-  header.scrolled {
+  header.scrolled {display:none;
     width: 90%;
     max-width: 500px
   }
