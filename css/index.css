@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'NeueHelveticaGeorgian';
-  src: url(/font/NeueHelveticaBQ-Bold.woff);
+  src: url(/font/neue-helvetica-75-bold.otf);
   font-weight: 700;
   /* Bold */
   font-style: normal;
@@ -55,6 +55,14 @@ body {
 html {
   font-size: 16px;
   overflow: hidden
+}
+
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 #liquid-container {
@@ -1097,8 +1105,13 @@ nav a:focus {
 /*디자인*/
 #design-grid .design-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+}
+
+#design-grid .design-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(.85);
 }
 
 #design-grid .design-item {
@@ -1206,6 +1219,40 @@ footer {
 }
 
 /* Responsive */
+@media (min-width:1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .about {
+    gap: 100px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width:1199px) {
+
+  .about {
+    gap: 50px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #design-grid .design-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  #builtup .builtup_mokup {    max-width: 400px;}
+  .Adaptive_box {
+flex-direction: column;}
+
+}
+
+
 @media (max-width:980px) {
   .about {
     grid-template-columns: 1fr
@@ -1218,7 +1265,11 @@ footer {
   .index_box {
     flex-direction: column
   }
-.Adaptive_box .Adaptive_left {width:100%;}
+
+  .Adaptive_box .Adaptive_left {
+    width: 100%;
+  }
+
   .index_left,
   .index_right {
     width: 100%
@@ -1232,6 +1283,81 @@ footer {
   .stats {
     grid-template-columns: repeat(3, 1fr)
   }
+
+  .index_right {
+    padding-top: 110px;
+  }
+    .project-site .flex_box {
+    justify-content: center;
+    max-width: 360px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+    .pc {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+  #about-profile .profile {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  #about-profile .profile img {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  #about-profile .name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  #about-profile .birth,
+  #about-profile .email {
+    text-align: left;
+  }
+
+  #about-profile {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+  }
+
+  #about-profile .container {
+    width: 100%;
+  }
+
+  #about-info {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+  }
+
+  #about-info .container {
+    width: 100%;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+
+
 }
 
 @media (max-width:720px) {
@@ -1269,14 +1395,18 @@ footer {
 
   .project-site .flex_box {
     justify-content: center;
-    max-width: 300px;
+    max-width: 250px;
     flex-direction: column;
     margin: 0 auto;
   }
 
 
-.project-site h2 {margin-bottom: 0;}
-  header.scrolled {display:none;
+  .project-site h2 {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+
+  header.scrolled {
     width: 90%;
     max-width: 500px
   }
@@ -1321,9 +1451,7 @@ footer {
     margin-bottom: 60px;
   }
 
-  .index_right {
-    padding-top: 110px;
-  }
+
 
   .skills {
     grid-template-columns: repeat(4, 1fr);
@@ -1331,7 +1459,7 @@ footer {
   }
 
   .skill b {
-    padding: 1px 2px;
+   padding: 13px 2px;
   }
 
   .about .card {
@@ -1340,10 +1468,21 @@ footer {
 
   .section__title {
     padding-bottom: 0;
+    line-height: 0.9;
   }
 
   #design-grid .design-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
+
+
+  
+  .Adaptive_title {
+    padding-bottom: 230px;
+  }
+  #liquid-container{
+    display:none !important;
+  }
 }
+
